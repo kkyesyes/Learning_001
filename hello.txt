@@ -7,4 +7,5 @@ This is a test file.
 
 jfiejffisjfilejsfji_new
 
-Master branch.
+
+Hot-fix branch.
