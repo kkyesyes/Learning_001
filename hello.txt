@@ -7,5 +7,5 @@ This is a test file.
 
 jfiejffisjfilejsfji_new
 
-
+line 10 test.
 Hot-fix branch.
