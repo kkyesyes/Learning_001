@@ -1,46 +1,28 @@
+
+
 #include <stdio.h>
 #include <string.h>
 
 int main() {
-    char word[25][12] = {0};
-    int counter = 0;
-    char temp[12] = {0};
-    int judge = 0;
+    int arr[7][10] = {{0,0,0,0,0,0,0,0,0,0}, {0,1,0,0,0,0,0,0,0,0}, {0,1,1,0,0,0,0,0,0,0}};
 
-    for (int i = 0; ; ++i) {
-        scanf("%s", word[i]);
-        if ('#' == word[i][0]) {
-            break;
+    for (int i = 3; i <= 6; ++i) {
+        for (int j = 1; j <= (i + 1); ++j) {
+            arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j];
         }
-        else {
-            ++counter;
-        }
-    }
+    }    
 
-    int n = counter;
-    for (int i = 0; i < (n - 1); ++i) {
-        for (int j = 0; j < (counter - 1); ++j) {
-            int _j = strlen(word[j]);
-            int j_ = strlen(word[j + 1]);
-            if (_j > j_) {
-                for (int k = 0; k <= (_j); ++k) {
-                    temp[k] = word[j][k];
-                    word[j][k] = word[j + 1][k];
-                    word[j + 1][k] = temp[k];
-                    judge = 1;
-                }
-            }
-        }
-        if (judge) {
-            --counter;
-        }
-        else {
-            break;
-        }
-    }
+    int space = 13;
 
-    for (int i = 0; i < n; ++i) {
-        printf("%s ", word[i]);
+    for (int i = 1; i <= 6; ++i) {
+        for (int j = 0; j < space; ++j) {
+            printf(" ");
+        }
+        for (int k = 1; k <= i; ++k) {
+            printf("%-4d", arr[i][k]);
+        }
+        printf("\n");
+        space -= 2;
     }
 
     return 0;
