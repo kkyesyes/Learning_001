@@ -5,7 +5,7 @@ This is a test file.
 
 
 
-jfiejffisjfilejsfji_new
+jfiejffisjfilejkfji_new
 
 line 10 test.
 line 9 test at hot-fix.
@@ -13,3 +13,4 @@ line 9 test at hot-fix.
 Hot-fix branch.
 
 REMOTE RENEW
+ignore test.
