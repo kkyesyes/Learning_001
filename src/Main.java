@@ -8,5 +8,6 @@ public class Main {
         System.out.println("new_branch hot-fix");
         System.out.println("new_branch fix");
         System.out.println("nb_from_new_branch test");
+        System.out.println("nb_nb_from_new_branch test");
     }
 }
