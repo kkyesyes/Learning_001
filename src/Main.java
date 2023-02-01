@@ -1,13 +1,15 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner myScanner = new Scanner(System.in);
 
-        System.out.println("Hello world!");
-        System.out.println("hello git");
-        System.out.println("hello git2");
-        System.out.println("test for main branch");
-        System.out.println("new_branch hot-fix");
-        System.out.println("new_branch fix");
-        System.out.println("nb_from_new_branch test");
-        System.out.println("nb_nb_from_new_branch test");
+        String name = myScanner.next();
+        int age = myScanner.nextInt();
+        int salary = myScanner.nextInt();
+
+        System.out.println("Your name is:" + name);
+        System.out.println("Your age is:" + age);
+        System.out.println("Your salary is:" + salary);
     }
 }
